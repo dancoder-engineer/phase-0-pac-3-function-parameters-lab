@@ -1,0 +1,48 @@
+
+> java-script-intro-to-functions-lab@0.1.0 test
+> mocha --timeout 5000 --reporter 'json' > .results.json & mocha
+
+
+
+  introduction(name)
+    1) takes in an argument of a name and returns a phrase with that name using string interpolation
+
+  introductionWithLanguage(name, language)
+    2) takes in two arguments, a name and a language, and returns a phrase using those arguments
+
+  introductionWithLanguageOptional(name, language)
+    3) takes in two arguments, a name and a language, and language defaults to JavaScript
+
+  introductionWithLanguageOptional(name, language)
+    4) takes in two arguments, a name and a language, and the default value can be overridden with an argument
+
+
+  0 passing (96ms)
+  4 failing
+
+  1) introduction(name)
+       takes in an argument of a name and returns a phrase with that name using string interpolation:
+     ReferenceError: introduction is not defined
+      at Context.<anonymous> (test/index-test.js:4:5)
+      at processImmediate (node:internal/timers:464:21)
+
+  2) introductionWithLanguage(name, language)
+       takes in two arguments, a name and a language, and returns a phrase using those arguments:
+     ReferenceError: introductionWithLanguage is not defined
+      at Context.<anonymous> (test/index-test.js:11:5)
+      at processImmediate (node:internal/timers:464:21)
+
+  3) introductionWithLanguageOptional(name, language)
+       takes in two arguments, a name and a language, and language defaults to JavaScript:
+     ReferenceError: introductionWithLanguageOptional is not defined
+      at Context.<anonymous> (test/index-test.js:18:5)
+      at processImmediate (node:internal/timers:464:21)
+
+  4) introductionWithLanguageOptional(name, language)
+       takes in two arguments, a name and a language, and the default value can be overridden with an argument:
+     ReferenceError: introductionWithLanguageOptional is not defined
+      at Context.<anonymous> (test/index-test.js:24:5)
+      at processImmediate (node:internal/timers:464:21)
+
+
+
